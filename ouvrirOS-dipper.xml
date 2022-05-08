@@ -6,52 +6,53 @@
   <remote name="OuvrirOS-Devices" fetch="https://github.com/OuvrirOS-Devices/" />
 
   <!-- Device Trees -->
-  <project path="device/xiaomi/sdm845-common" remote="OuvrirOS-Devices" name="android_device_xiaomi_sdm845-common" revision="main" />
-  <project path="device/xiaomi/dipper" remote="OuvrirOS-Devices" name="android_device_xiaomi_dipper" revision="main" />
+  <project path="device/xiaomi/sdm845-common" remote="OuvrirOS-Devices" name="android_device_xiaomi_sdm845-common" revision="main" groups="device,qcom_sdm845" />
+  <project path="device/xiaomi/dipper" remote="OuvrirOS-Devices" name="android_device_xiaomi_dipper" revision="main" groups="device,dipper" />
 
   <!-- Kernel -->
-  <project path="kernel/xiaomi/dipper" remote="OuvrirOS" name="android_kernel_xiaomi_dipper" revision="main" />
+  <project path="kernel/xiaomi/dipper" remote="OuvrirOS" name="android_kernel_xiaomi_dipper" revision="main" groups="pdk" />
 
   <!-- Vendor -->
-  <project path="vendor/qcom/opensource/usb" remote="OuvrirOS" name="android_vendor_qcom_opensource_usb" revision="main" />
-  <project path="vendor/qcom/opensource/commonsys/display" remote="OuvrirOS" name="android_vendor_qcom_opensource_commonsys_display" revision="main" />
-  <project path="vendor/qcom/opensource/commonsys-intf/display" remote="OuvrirOS" name="android_vendor_qcom_opensource_display-commonsys-intf" revision="main" />
-  <project path="vendor/qcom/opensource/display" remote="OuvrirOS" name="android_vendor_qcom_opensource_display" revision="main" />
-  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" remote="OuvrirOS" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" revision="main" />
-  <project path="vendor/qcom/opensource/dataservices" remote="OuvrirOS" name="android_vendor_qcom_opensource_dataservices" revision="main" />
-  <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" remote="OuvrirOS" name="android_vendor_qcom_opensource_packages_apps_Bluetooth" revision="main" />
-  <project path="vendor/qcom/opensource/commonsys/system/bt" remote="OuvrirOS" name="android_vendor_qcom_opensource_system_bt" revision="main" />
+  <project path="vendor/qcom/opensource/usb" remote="OuvrirOS" name="android_vendor_qcom_opensource_usb" revision="main" groups="generic_fs,vendor" />
+  <project path="vendor/qcom/opensource/commonsys/display" remote="OuvrirOS" name="android_vendor_qcom_opensource_commonsys_display" revision="main" groups="generic_fs,vendor" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" remote="OuvrirOS" name="android_vendor_qcom_opensource_display-commonsys-intf" revision="main" groups="generic_fs,vendor" />
+  <project path="vendor/qcom/opensource/display" remote="OuvrirOS" name="android_vendor_qcom_opensource_display" revision="main" groups="generic_fs,vendor" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" remote="OuvrirOS" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" revision="main" groups="generic_fs,vendor" />
+  <project path="vendor/qcom/opensource/dataservices" remote="OuvrirOS" name="android_vendor_qcom_opensource_dataservices" revision="main" groups="generic_fs,vendor" />
+  <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" remote="OuvrirOS" name="android_vendor_qcom_opensource_packages_apps_Bluetooth" revision="main" groups="generic_fs,vendor" />
+  <project path="vendor/qcom/opensource/commonsys/system/bt" remote="OuvrirOS" name="android_vendor_qcom_opensource_system_bt" revision="main" groups="generic_fs,vendor" />
 
-  <project path="vendor/nxp/opensource/pn5xx" remote="OuvrirOS" name="android_vendor_nxp_opensource_pn5xx_halimp" revision="main" />
+  <project path="vendor/nxp/opensource/pn5xx" remote="OuvrirOS" name="android_vendor_nxp_opensource_pn5xx_halimp" revision="main" groups="generic_fs,vendor" />
 
-  <project path="vendor/ouvrir" remote="OuvrirOS-Devices" name="android_vendor_ouvrir" revision="main" />
-  <project path="vendor/xiaomi/dipper" remote="OuvrirOS-Devices" name="proprietary_vendor_xiaomi_dipper" revision="main" />
-  <project path="vendor/xiaomi/sdm845-common" remote="OuvrirOS-Devices" name="proprietary_vendor_xiaomi_sdm845-common" revision="main" />
-  <project path="vendor/xiaomi/sdm845-common-extra" remote="OuvrirOS-Devices" name="proprietary_vendor_xiaomi_sdm845-common-extra" revision="main" />
+  <project path="vendor/ouvrir" remote="OuvrirOS-Devices" name="android_vendor_ouvrir" revision="main" groups="generic_fs,vendor,ouvrir" />
+  <project path="vendor/xiaomi/dipper" remote="OuvrirOS-Devices" name="proprietary_vendor_xiaomi_dipper" revision="main" groups="generic_fs,vendor,dipper" />
+  <project path="vendor/xiaomi/sdm845-common" remote="OuvrirOS-Devices" name="proprietary_vendor_xiaomi_sdm845-common" revision="main" groups="generic_fs,vendor,qcom_sdm845" />
+  <project path="vendor/xiaomi/sdm845-common-extra" remote="OuvrirOS-Devices" name="proprietary_vendor_xiaomi_sdm845-common-extra" revision="main" groups="generic_fs,vendor,qcom_sdm845" />
 
   <!-- Hardware -->
-  <project path="hardware/xiaomi" remote="OuvrirOS-Devices" name="android_hardware_xiaomi" revision="main" />
-  <project path="hardware/livedisplay" remote="OuvrirOS" name="android_hardware_livedisplay" revision="main" />
+  <project path="hardware/xiaomi" remote="OuvrirOS-Devices" name="android_hardware_xiaomi" revision="main" groups="pdk" />
+  <project path="hardware/livedisplay" remote="OuvrirOS" name="android_hardware_livedisplay" revision="main" groups="pdk" />
 
   <!-- Ouvrir SDK -->
-  <project path="ouvrir-sdk" name="android_ouvrir-sdk" remote="OuvrirOS" revision="main" />
+  <project path="ouvrir-sdk" name="android_ouvrir-sdk" remote="OuvrirOS" revision="main" groups="pdk" />
 
   <!-- Packages -->
   <!-- Resources -->
-  <project path="packages/resources/devicesettings" remote="OuvrirOS-Devices" name="android_packages_resources_devicesettings" revision="main" />
+  <project path="packages/resources/devicesettings" remote="OuvrirOS-Devices" name="android_packages_resources_devicesettings" revision="main" groups="pdk" />
   <!-- Build soong -->
   <remove-project name="platform/build/soong" />
-  <project path="build/soong" remote="OuvrirOS" name="android_build_soong" revision="main" groups="pdk,tradefed">
+  <project path="build/soong" remote="OuvrirOS" name="android_build_soong" revision="main" groups="pdk,tradefed" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <!-- SEPolicy -->
-  <project path="device/qcom/sepolicy_vndr" remote="LineageOS" name="android_device_qcom_sepolicy_vndr" revision="lineage-19.1" />
+  <project path="device/ouvrir/sepolicy" remote="OuvrirOS" name="android_device_ouvrir_sepolicy" revision="main" groups="device,ouvrir" />
+  <project path="device/qcom/sepolicy_vndr" remote="OuvrirOS" name="android_device_qcom_sepolicy_vndr" revision="main" groups="device,qcom" />
   <!-- Apps -->
   <remove-project name="platform/packages/apps/Dialer" />
-  <remove-project name="platform/packages/apps/Messaging" />
+  <!-- <remove-project name="platform/packages/apps/Messaging" /> -->
   <remove-project name="platform/packages/apps/DeskClock" />
-  <project path="packages/apps/Dialer" remote="Octavi-OS" name="platform_packages_apps_Dialer" revision="12" />
-  <project path="packages/apps/Messaging" remote="Octavi-OS" name="platform_packages_apps_Messaging" revision="12" />
-  <project path="packages/apps/DeskClock" remote="Octavi-OS" name="platform_packages_apps_DeskClock" revision="12" />
+  <project path="packages/apps/Dialer" remote="Octavi-OS" name="platform_packages_apps_Dialer" revision="12" groups="pdk-fs" />
+  <!-- <project path="packages/apps/Messaging" remote="Octavi-OS" name="platform_packages_apps_Messaging" revision="12" groups="pdk-fs" /> -->
+  <project path="packages/apps/DeskClock" remote="Octavi-OS" name="platform_packages_apps_DeskClock" revision="12" groups="pdk-fs" />
 </manifest>
