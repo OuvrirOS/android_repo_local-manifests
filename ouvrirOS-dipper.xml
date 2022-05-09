@@ -7,7 +7,7 @@
   <!-- Device Trees -->
   <project path="device/xiaomi/sdm845-common" remote="OuvrirOS-Devices" name="android_device_xiaomi_sdm845-common" revision="main" groups="device,qcom_sdm845" />
   <project path="device/xiaomi/dipper" remote="OuvrirOS-Devices" name="android_device_xiaomi_dipper" revision="main" groups="device,dipper" />
-  <project path="device/qcom/qssi" remote="OuvrirOS" name="android_device_qcom_qssi" revision="main" groups="device,qcom,qssi" />
+  <project path="device/qcom/qssi" remote="OuvrirOS" name="android_device_qcom_qssi" revision="sdm845" groups="device,qcom_sdm845,qssi" />
 
   <!-- Kernel -->
   <project path="kernel/xiaomi/dipper" remote="OuvrirOS" name="android_kernel_xiaomi_dipper" revision="main" groups="pdk" />
