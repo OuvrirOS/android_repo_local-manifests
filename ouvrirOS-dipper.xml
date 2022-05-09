@@ -12,28 +12,11 @@
   <!-- Kernel -->
   <project path="kernel/xiaomi/dipper" remote="OuvrirOS" name="android_kernel_xiaomi_dipper" revision="main" groups="pdk" />
 
-  <!-- Vendor -->
-  <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" remote="OuvrirOS" name="android_vendor_qcom_opensource_bluetooth-commonsys-intf" revision="main" groups="generic_fs,vendor" />
-  <project path="vendor/qcom/opensource/commonsys-intf/display" remote="OuvrirOS" name="android_vendor_qcom_opensource_display-commonsys-intf" revision="main" groups="generic_fs,vendor" />
-  <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" remote="OuvrirOS" name="android_vendor_qcom_opensource_bluetooth_ext" revision="main" groups="generic_fs,vendor" />
-  <project path="vendor/qcom/opensource/commonsys/display" remote="OuvrirOS" name="android_vendor_qcom_opensource_commonsys_display" revision="main" groups="generic_fs,vendor" />
-  <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" remote="OuvrirOS" name="android_vendor_qcom_opensource_packages_apps_Bluetooth" revision="main" groups="generic_fs,vendor" />
-  <project path="vendor/qcom/opensource/commonsys/system/bt" remote="OuvrirOS" name="android_vendor_qcom_opensource_system_bt" revision="main" groups="generic_fs,vendor" />
-  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" remote="OuvrirOS" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" revision="main" groups="generic_fs,vendor" />
-  <project path="vendor/qcom/opensource/dataservices" remote="OuvrirOS" name="android_vendor_qcom_opensource_dataservices" revision="main" groups="generic_fs,vendor" />
-  <project path="vendor/qcom/opensource/display" remote="OuvrirOS" name="android_vendor_qcom_opensource_display" revision="main" groups="generic_fs,vendor" />
-  <project path="vendor/qcom/opensource/usb" remote="OuvrirOS" name="android_vendor_qcom_opensource_usb" revision="main" groups="generic_fs,vendor" />
-
-  <project path="vendor/nxp/opensource/pn5xx" remote="OuvrirOS" name="android_vendor_nxp_opensource_pn5xx_halimp" revision="main" groups="generic_fs,vendor" />
-
-  <project path="vendor/ouvrir" remote="OuvrirOS-Devices" name="android_vendor_ouvrir" revision="main" groups="generic_fs,vendor,ouvrir" />
-  <project path="vendor/xiaomi/dipper" remote="OuvrirOS-Devices" name="proprietary_vendor_xiaomi_dipper" revision="main" groups="generic_fs,vendor,dipper" />
-  <project path="vendor/xiaomi/sdm845-common" remote="OuvrirOS-Devices" name="proprietary_vendor_xiaomi_sdm845-common" revision="main" groups="generic_fs,vendor,qcom_sdm845" />
-  <project path="vendor/xiaomi/sdm845-common-extra" remote="OuvrirOS-Devices" name="proprietary_vendor_xiaomi_sdm845-common-extra" revision="main" groups="generic_fs,vendor,qcom_sdm845" />
-
   <!-- Hardware -->
-  <!-- <project path="hardware/livedisplay" remote="OuvrirOS" name="android_hardware_livedisplay" revision="main" groups="pdk" /> -->
-  <project path="hardware/qcom/audio" remote="OuvrirOS" name="android_hardware_qcom_audio" revision="main" groups="pdk" >
+  <project path="hardware/livedisplay" remote="OuvrirOS" name="android_hardware_livedisplay" revision="main" groups="pdk" />
+  <project path="hardware/ouvrir/interfaces" remote="OuvrirOS" name="android_hardware_ouvrir_interfaces" revision="main" groups="pdk" />
+  <remove-project name="platform/hardware/qcom/audio" />
+  <project path="hardware/qcom/audio" remote="OuvrirOS" name="android_hardware_qcom_audio" revision="main" groups="pdk" />
   <project path="hardware/qcom-caf/bt" remote="OuvrirOS" name="android_hardware_qcom-caf_bt" revision="main" groups="pdk" />
   <project path="hardware/qcom-caf/common" remote="OuvrirOS" name="android_hardware_qcom-caf_common" revision="main" groups="pdk" >
     <!-- add guard for AOSP hardware/qcom dir -->
@@ -58,6 +41,36 @@
     <linkfile src="os_pickup_qssi_bt.bp" dest="device/qcom/qssi/Android.bp" />
   </project>
   <project path="hardware/xiaomi" remote="OuvrirOS-Devices" name="android_hardware_xiaomi" revision="main" groups="pdk" />
+
+  <!-- Vendor -->
+  <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" remote="OuvrirOS" name="android_vendor_qcom_opensource_bluetooth-commonsys-intf" revision="main" groups="generic_fs,vendor" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" remote="OuvrirOS" name="android_vendor_qcom_opensource_display-commonsys-intf" revision="main" groups="generic_fs,vendor" />
+  <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" remote="OuvrirOS" name="android_vendor_qcom_opensource_bluetooth_ext" revision="main" groups="generic_fs,vendor" />
+  <project path="vendor/qcom/opensource/commonsys/display" remote="OuvrirOS" name="android_vendor_qcom_opensource_commonsys_display" revision="main" groups="generic_fs,vendor" />
+  <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" remote="OuvrirOS" name="android_vendor_qcom_opensource_packages_apps_Bluetooth" revision="main" groups="generic_fs,vendor" />
+  <project path="vendor/qcom/opensource/commonsys/system/bt" remote="OuvrirOS" name="android_vendor_qcom_opensource_system_bt" revision="main" groups="generic_fs,vendor" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" remote="OuvrirOS" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" revision="main" groups="generic_fs,vendor" />
+  <project path="vendor/qcom/opensource/dataservices" remote="OuvrirOS" name="android_vendor_qcom_opensource_dataservices" revision="main" groups="generic_fs,vendor" />
+  <project path="vendor/qcom/opensource/display" remote="OuvrirOS" name="android_vendor_qcom_opensource_display" revision="main" groups="generic_fs,vendor" />
+  <project path="vendor/qcom/opensource/usb" remote="OuvrirOS" name="android_vendor_qcom_opensource_usb" revision="main" groups="generic_fs,vendor" />
+
+  <project path="vendor/nxp/nfc" remote="OuvrirOS" name="android_vendor_nxp_nfc" groups="vendor,nxp" />
+  <project path="vendor/nxp/opensource/interfaces/nfc" remote="OuvrirOS" name="android_vendor_nxp_opensource_interfaces_nfc" groups="vendor,nxp" />
+  <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" remote="OuvrirOS" name="android_vendor_nxp_opensource_external_libnfc-nci" groups="vendor,nxp" />
+  <project path="vendor/nxp/opensource/commonsys/frameworks" remote="OuvrirOS" name="android_vendor_nxp_opensource_frameworks" groups="vendor,nxp" />
+  <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" remote="OuvrirOS" name="android_vendor_nxp_opensource_packages_apps_Nfc" groups="vendor,nxp" />
+  <project path="vendor/nxp/opensource/pn5xx/halimpl" remote="OuvrirOS" name="android_vendor_nxp_opensource_pn5xx_halimpl" groups="vendor,nxp" />
+  <project path="vendor/nxp/opensource/pn5xx/hidlimpl" remote="OuvrirOS" name="android_vendor_nxp_opensource_pn5xx_hidlimpl" groups="vendor,nxp" />
+  <project path="vendor/nxp/opensource/sn100x/halimpl" remote="OuvrirOS" name="android_vendor_nxp_opensource_sn100x_halimpl" groups="vendor,nxp" />
+  <project path="vendor/nxp/opensource/sn100x/hidlimpl" remote="OuvrirOS" name="android_vendor_nxp_opensource_sn100x_hidlimpl" groups="vendor,nxp" />
+  <project path="vendor/nxp/secure_element" remote="OuvrirOS" name="android_vendor_nxp_secure_element" groups="vendor,nxp" />
+  <project path="vendor/nxp/secure_element_extns" remote="OuvrirOS" name="android_vendor_nxp_secure_element_extns" groups="vendor,nxp" />
+
+  <project path="vendor/xiaomi/dipper" remote="OuvrirOS-Devices" name="proprietary_vendor_xiaomi_dipper" revision="main" groups="generic_fs,vendor,dipper" />
+  <project path="vendor/ouvrir" remote="OuvrirOS-Devices" name="android_vendor_ouvrir" revision="main" groups="generic_fs,vendor,ouvrir" />
+  <project path="vendor/xiaomi/sdm845-common" remote="OuvrirOS-Devices" name="proprietary_vendor_xiaomi_sdm845-common" revision="main" groups="generic_fs,vendor,qcom_sdm845" />
+  <project path="vendor/xiaomi/sdm845-common-extra" remote="OuvrirOS-Devices" name="proprietary_vendor_xiaomi_sdm845-common-extra" revision="main" groups="generic_fs,vendor,qcom_sdm845" />
+  <project path="vendor/qcom/opensource/interfaces" remote="OuvrirOS" name="android_vendor_qcom_opensource_interfaces" revision="main" groups="generic_fs,vendor" />
 
   <!-- Ouvrir SDK -->
   <!-- <project path="ouvrir-sdk" name="android_ouvrir-sdk" remote="OuvrirOS" revision="main" groups="pdk" /> -->
