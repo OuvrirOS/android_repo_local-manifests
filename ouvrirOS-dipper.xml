@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="LineageOS" fetch="https://github.com/LineageOS/" />
   <remote name="Octavi-OS" fetch="https://github.com/Octavi-OS/" />
   <remote name="OuvrirOS" fetch="https://github.com/OuvrirOS/" />
   <remote name="OuvrirOS-Devices" fetch="https://github.com/OuvrirOS-Devices/" />
