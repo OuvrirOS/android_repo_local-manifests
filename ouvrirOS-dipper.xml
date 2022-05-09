@@ -54,17 +54,17 @@
   <project path="vendor/qcom/opensource/display" remote="OuvrirOS" name="android_vendor_qcom_opensource_display" revision="main" groups="generic_fs,vendor" />
   <project path="vendor/qcom/opensource/usb" remote="OuvrirOS" name="android_vendor_qcom_opensource_usb" revision="main" groups="generic_fs,vendor" />
 
-  <project path="vendor/nxp/nfc" remote="OuvrirOS" name="android_vendor_nxp_nfc" groups="vendor,nxp" />
-  <project path="vendor/nxp/opensource/interfaces/nfc" remote="OuvrirOS" name="android_vendor_nxp_opensource_interfaces_nfc" groups="vendor,nxp" />
-  <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" remote="OuvrirOS" name="android_vendor_nxp_opensource_external_libnfc-nci" groups="vendor,nxp" />
-  <project path="vendor/nxp/opensource/commonsys/frameworks" remote="OuvrirOS" name="android_vendor_nxp_opensource_frameworks" groups="vendor,nxp" />
-  <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" remote="OuvrirOS" name="android_vendor_nxp_opensource_packages_apps_Nfc" groups="vendor,nxp" />
-  <project path="vendor/nxp/opensource/pn5xx/halimpl" remote="OuvrirOS" name="android_vendor_nxp_opensource_pn5xx_halimpl" groups="vendor,nxp" />
-  <project path="vendor/nxp/opensource/pn5xx/hidlimpl" remote="OuvrirOS" name="android_vendor_nxp_opensource_pn5xx_hidlimpl" groups="vendor,nxp" />
-  <project path="vendor/nxp/opensource/sn100x/halimpl" remote="OuvrirOS" name="android_vendor_nxp_opensource_sn100x_halimpl" groups="vendor,nxp" />
-  <project path="vendor/nxp/opensource/sn100x/hidlimpl" remote="OuvrirOS" name="android_vendor_nxp_opensource_sn100x_hidlimpl" groups="vendor,nxp" />
-  <project path="vendor/nxp/secure_element" remote="OuvrirOS" name="android_vendor_nxp_secure_element" groups="vendor,nxp" />
-  <project path="vendor/nxp/secure_element_extns" remote="OuvrirOS" name="android_vendor_nxp_secure_element_extns" groups="vendor,nxp" />
+  <project path="vendor/nxp/nfc" remote="OuvrirOS" name="android_vendor_nxp_nfc" revision="main" groups="vendor,nxp,nfc" />
+  <project path="vendor/nxp/opensource/interfaces/nfc" remote="OuvrirOS" name="android_vendor_nxp_opensource_interfaces_nfc" revision="main" groups="vendor,nxp" />
+  <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" remote="OuvrirOS" name="android_vendor_nxp_opensource_external_libnfc-nci" revision="main" groups="vendor,nxp" />
+  <project path="vendor/nxp/opensource/commonsys/frameworks" remote="OuvrirOS" name="android_vendor_nxp_opensource_frameworks" revision="main" groups="vendor,nxp" />
+  <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" remote="OuvrirOS" name="android_vendor_nxp_opensource_packages_apps_Nfc" revision="main" groups="vendor,nxp" />
+  <project path="vendor/nxp/opensource/pn5xx/halimpl" remote="OuvrirOS" name="android_vendor_nxp_opensource_pn5xx_halimpl" revision="main" groups="vendor,nxp" />
+  <project path="vendor/nxp/opensource/pn5xx/hidlimpl" remote="OuvrirOS" name="android_vendor_nxp_opensource_pn5xx_hidlimpl" revision="main" groups="vendor,nxp" />
+  <project path="vendor/nxp/opensource/sn100x/halimpl" remote="OuvrirOS" name="android_vendor_nxp_opensource_sn100x_halimpl" revision="main" groups="vendor,nxp" />
+  <project path="vendor/nxp/opensource/sn100x/hidlimpl" remote="OuvrirOS" name="android_vendor_nxp_opensource_sn100x_hidlimpl" revision="main" groups="vendor,nxp" />
+  <project path="vendor/nxp/secure_element" remote="OuvrirOS" name="android_vendor_nxp_secure_element" revision="main" groups="vendor,nxp" />
+  <project path="vendor/nxp/secure_element_extns" remote="OuvrirOS" name="android_vendor_nxp_secure_element_extns" revision="main" groups="vendor,nxp" />
 
   <project path="vendor/xiaomi/dipper" remote="OuvrirOS-Devices" name="proprietary_vendor_xiaomi_dipper" revision="main" groups="generic_fs,vendor,dipper" />
   <project path="vendor/ouvrir" remote="OuvrirOS-Devices" name="android_vendor_ouvrir" revision="main" groups="generic_fs,vendor,ouvrir" />
