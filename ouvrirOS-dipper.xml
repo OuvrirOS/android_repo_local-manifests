@@ -3,6 +3,7 @@
   <remote name="Octavi-OS" fetch="https://github.com/Octavi-OS/" />
   <remote name="OuvrirOS" fetch="https://github.com/OuvrirOS/" />
   <remote name="OuvrirOS-Devices" fetch="https://github.com/OuvrirOS-Devices/" />
+  <remote name="dot" fetch="https://github.com/DotOS" review="https://review.droidontime.com/" revision="refs/heads/dot12.1" />
 
   <!-- Device Trees -->
   <project path="device/xiaomi/sdm845-common" remote="OuvrirOS-Devices" name="android_device_xiaomi_sdm845-common" revision="main" groups="device,qcom_sdm845" />
@@ -43,6 +44,8 @@
   <project path="hardware/xiaomi" remote="OuvrirOS-Devices" name="android_hardware_xiaomi" revision="main" groups="pdk" />
 
   <!-- Vendor -->
+  <project path="vendor/ouvrir" remote="OuvrirOS" name="android_vendor_ouvrir" revision="main" groups="generic_fs,vendor,ouvrir" />
+
   <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" remote="OuvrirOS" name="android_vendor_qcom_opensource_bluetooth-commonsys-intf" revision="main" groups="generic_fs,vendor" />
   <project path="vendor/qcom/opensource/commonsys-intf/display" remote="OuvrirOS" name="android_vendor_qcom_opensource_display-commonsys-intf" revision="main" groups="generic_fs,vendor" />
   <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" remote="OuvrirOS" name="android_vendor_qcom_opensource_bluetooth_ext" revision="main" groups="generic_fs,vendor" />
@@ -67,10 +70,23 @@
   <project path="vendor/nxp/secure_element_extns" remote="OuvrirOS" name="android_vendor_nxp_secure_element_extns" revision="main" groups="vendor,nxp" />
 
   <project path="vendor/xiaomi/dipper" remote="OuvrirOS-Devices" name="proprietary_vendor_xiaomi_dipper" revision="main" groups="generic_fs,vendor,dipper" />
-  <project path="vendor/ouvrir" remote="OuvrirOS-Devices" name="android_vendor_ouvrir" revision="main" groups="generic_fs,vendor,ouvrir" />
   <project path="vendor/xiaomi/sdm845-common" remote="OuvrirOS-Devices" name="proprietary_vendor_xiaomi_sdm845-common" revision="main" groups="generic_fs,vendor,qcom_sdm845" />
   <project path="vendor/xiaomi/sdm845-common-extra" remote="OuvrirOS-Devices" name="proprietary_vendor_xiaomi_sdm845-common-extra" revision="main" groups="generic_fs,vendor,qcom_sdm845" />
   <project path="vendor/qcom/opensource/interfaces" remote="OuvrirOS" name="android_vendor_qcom_opensource_interfaces" revision="main" groups="generic_fs,vendor" />
+
+  <!-- Frameworks -->
+  <remove-project name="platform/frameworks/av" />
+  <remove-project name="platform/frameworks/base" />
+  <remove-project name="platform/frameworks/native" />
+  <remove-project name="platform/frameworks/opt/net/ims" />
+  <remove-project name="platform/frameworks/opt/net/wifi" />
+  <remove-project name="platform/frameworks/opt/telephony" />
+  <project path="frameworks/av" name="android_frameworks_av" remote="OuvrirOS" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="OuvrirOS" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="OuvrirOS" />
+  <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" remote="OuvrirOS" />
+  <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="OuvrirOS" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="OuvrirOS" />
 
   <!-- Ouvrir SDK -->
   <!-- <project path="ouvrir-sdk" name="android_ouvrir-sdk" remote="OuvrirOS" revision="main" groups="pdk" /> -->
